@@ -1,24 +1,7 @@
-# README
+# Recipeer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is recipeer created by Juris Davis Veldre
 
-Things you may want to cover:
+To use the application go to "My fridge" page and add ingredients one by one, when added go to main page and click the "GO"  button to find out in which recipes all the ingredients will be found.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Have a nice meal!
