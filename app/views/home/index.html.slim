@@ -1,7 +1,8 @@
 .card.mb-3
   .card-body
     h5.card-title Press the button to get the recipe from ingredients in your fridge
-    button.btn.btn-primary.btn-lg type="button"  LETS GO
+    = link_to home_get_recipes_path, method: :get
+      button.btn.btn-primary.btn-lg type="button"  LETS GO
 .recipies
   - if @recipies.present?
     .row

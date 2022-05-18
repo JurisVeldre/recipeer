@@ -18,6 +18,6 @@ h5 My fridge
       = "There is no ingredients"
 
     = form_tag(fridge_ingredients_path) do
-      = text_field_tag 'name', nil, placeholder: 'Name'
+      = text_field_tag 'name', nil, placeholder: 'Add ingredient...'
       = submit_tag "Add"
   .col
