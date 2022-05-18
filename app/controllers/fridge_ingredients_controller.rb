@@ -8,6 +8,7 @@ class FridgeIngredientsController < ApplicationController
 
     if ingredient.save
       redirect_to action: "index"
+
       return
     end
 
