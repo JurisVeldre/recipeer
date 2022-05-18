@@ -1,0 +1,17 @@
+.card.mb-3
+  .card-body
+    h5.card-title Press the button to get the recipe from ingredients in your fridge
+    button.btn.btn-primary.btn-lg type="button"  LETS GO
+.recipies
+  - if @recipies.present?
+    .row
+      - @recipies.each do |recipe|
+        .col-lg-4.col-sm-6.mb-4
+          .card style=("width: 18rem;")
+            img.card-img-top src=recipe.image
+            .card-body
+              h5.card-title
+                = recipe.title
+              - eval(recipe.ingredients).each do |ingredient|
+                p.card-text
+                  = ingredient

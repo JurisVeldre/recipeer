@@ -1,0 +1,23 @@
+h5 My fridge
+.row
+  .col
+    - if @ingredients.present?
+      table.table.table-striped
+        thead
+          tr
+            th scope="col"  Name
+          tbody
+            - @ingredients.each do |ingredient|
+              tr
+                th scope="row"
+                  = ingredient.name
+                th scope="row"
+                  = link_to fridge_ingredient_path(ingredient), method: :delete, data: { confirm: "Are you sure you want to delete #{ingredient.name}?" }
+                    button.btn-close.float-end aria-label="Delete" type="button"
+    - else
+      = "There is no ingredients"
+
+    = form_tag(fridge_ingredients_path) do
+      = text_field_tag 'name', nil, placeholder: 'Name'
+      = submit_tag "Add"
+  .col
